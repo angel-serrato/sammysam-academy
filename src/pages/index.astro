@@ -1,0 +1,70 @@
+---
+import BaseHead from "../components/BaseHead.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+	</head>
+	<body>
+		<Header />
+		<main>
+			<h1>🧑‍🎓 SammySam Academy!</h1>
+			<p>
+				Welcome to the official <a href="https://www.openenglish.com"
+					>English Academy</a
+				> website. This site is the perfect starting point for anyone looking to
+				improve their English skills, whether you're a beginner or looking to refine
+				your fluency.
+			</p>
+			<p>
+				This platform comes with a variety of courses and resources to help you
+				achieve your language goals. You can personalize your learning
+				experience by choosing courses that suit your needs, from grammar to
+				conversation practice.
+			</p>
+			<p>Here are a few ideas on how to get started with the academy:</p>
+			<ul>
+				<li>
+					Sign up for our free trial in <code>src/pages/signup.astro</code>
+				</li>
+				<li>
+					Browse available courses in <code>src/pages/courses.astro</code>
+				</li>
+				<li>
+					Learn more about our instructors in <code
+						>src/components/Instructor.astro</code
+					>
+				</li>
+				<li>
+					Check out our blog for English tips and learning resources in <code
+						>src/content/blog/</code
+					>
+				</li>
+				<li>
+					Join a live conversation class to practice your speaking skills in <code
+						>src/pages/classes.astro</code
+					>
+				</li>
+			</ul>
+			<p>
+				We hope you enjoy your learning journey! If you have any questions,
+				remember to <a href="https://www.englishacademy.com/docs"
+					>read our guide</a
+				> or <a href="https://www.englishacademy.com/chat">join us on chat</a> to
+				ask for assistance.
+			</p>
+			<p>
+				Looking for more resources to help with your studies? Check out our
+				partner <a href="https://www.languagelearning.com"
+					>Language Learning Hub</a
+				>.
+			</p>
+		</main>
+		<Footer />
+	</body>
+</html>
